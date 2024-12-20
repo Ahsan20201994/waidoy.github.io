@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waidoy Garage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: rgb(49, 48, 48);
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            position: relative; /* Dibutuhkan untuk memposisikan elemen anak */
+        }
+        .logo {
+            position: absolute; /* Memungkinkan pengaturan posisi relatif terhadap header */
+            top: 5px; /* Jarak dari atas header */
+            left: 5px; /* Jarak dari kiri header */
+            width: 200px; /* Sesuaikan ukuran logo */
+            height: 150px; /* Jaga rasio logo */
+        }
+        nav {
+            background-color: #616a74;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #556170;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            flex: 1;
+            min-width: 200px;
+            max-width: 300px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(143, 14, 14);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .whatsapp-logo {
+            position: fixed;
+            bottom: 20px; /* Jarak dari bawah */
+            right: 20px;  /* Jarak dari kanan */
+            width: 50px;  /* Lebar logo */
+            height: 50px; /* Tinggi logo */
+            z-index: 1000; /* Supaya di atas elemen lain */
+        }
+
+        .whatsapp-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Efek hover */
+        }
+
+        .whatsapp-logo img:hover {
+         transform: scale(1.1); /* Membesarkan logo saat hover */
+        }
+
+        .instagram-logo {
+            position: fixed;
+            bottom: 10px; /* Jarak dari bawah */
+            right: 10px;  /* Jarak dari kanan */
+            width: 50px;  /* Lebar logo */
+            height: 50px; /* Tinggi logo */
+            z-index: 1000; /* Supaya di atas elemen lain */
+        }
+
+        .instagram-logo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease; /* Efek hover */
+        }
+
+        .instagram-logo img:hover {
+         transform: scale(1.1); /* Membesarkan logo saat hover */
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <a href="">
+            <img src="logo/logo.png" alt="Logo Bengkel" class="logo">
+        </a>
+        <h1>WAIDOY GARAGE</h1>
+        <p>Solusi Terbaik untuk Motor Anda!</p>
+    </header>
+    
+    <nav>
+        <a href="#about">Tentang Kami</a>
+        <a href="#services">Layanan</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+    <div class="container" id="about">
+        <h2>Tentang Kami</h2>
+        <p>Waidoy Garage adalah bengkel terpercaya yang menyediakan layanan perawatan dan perbaikan motor. Dengan teknisi berpengalaman, kami berkomitmen untuk memberikan pelayanan terbaik untuk kendaraan Anda.</p>
+    </div>
+    <div class="container" id="services">
+        <h2>Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Servis Berkala</h3>
+                <p>Pastikan motor Anda selalu dalam kondisi prima dengan servis rutin.</p>
+            </div>
+            <div class="service">
+                <h3>Ganti Oli</h3>
+                <p>Kami menggunakan oli berkualitas tinggi untuk performa optimal.</p>
+            </div>
+            <div class="service">
+                <h3>Perbaikan Mesin</h3>
+                <p>Teknisi kami siap menangani berbagai kerusakan mesin.</p>
+            </div>
+            <div class="service">
+                <h3>Reset Remote Control</h3>
+                <p>Kami dapat mereset remote motor Anda</p>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <h3>Pemasangan Biled</h3>
+                    <p>Pastikan motor Anda memiliki pencahayaan yang maksimal</p>
+             </div>
+             
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Kontak Kami</h2>
+        <p>Alamat: Jl. Kapten Dasuki Bakrie Km.06 Gunung Menyan</p>
+        <p>Telepon: +62 882-9474-8983</p>
+        <p>Email: waidoygarage@gmail.com</p>
+    </div>
+    <footer>
+          <!-- Logo WhatsApp -->
+  <a href="https://wa.me/6288294748983" class="whatsapp-logo" target="_blank">
+    <img src="logo/logowa.png" alt="WhatsApp">
+  </a>
+        <p>&copy; 2025 Waidoy Garage</p>
+    </footer>
+</body>
+</html>
